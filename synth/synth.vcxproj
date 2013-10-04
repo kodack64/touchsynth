@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{216133D5-ABC6-49C9-902C-ABAA07AD35F1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>synth</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;C:\DXSDK\include;C:\Box2D_v2.1.2\Box2D;C:\CLAPACK\CLAPACK-3.1.1-VisualStudio\INCLUDE;C:\OpenCV2.1\include\opencv;C:\portaudio\include;C:\portaudio\src\common;C:\ASIOSDK2\common;C:\ASIOSDK2\host;C:\ASIOSDK2\host\pc;C:\Users\Admin\Desktop\program\cpp\synth\synth\TUIO;C:\Users\Admin\Desktop\program\cpp\synth\synth\oscpack</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;C:\DXSDK\lib;C:\Box2D_v2.1.2\Box2D\Lib;C:\CLAPACK\CLAPACK-3.1.1-VisualStudio\LIB\Win32;C:\OpenCV2.1\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;C:\DXSDK\include;C:\Box2D_v2.1.2\Box2D;C:\CLAPACK\CLAPACK-3.1.1-VisualStudio\INCLUDE;C:\OpenCV2.1\include\opencv;C:\portaudio\include;C:\portaudio\src\common;C:\ASIOSDK2\common;C:\ASIOSDK2\host;C:\ASIOSDK2\host\pc;C:\Users\Admin\Desktop\program\cpp\synth\synth\TUIO;C:\Users\Admin\Desktop\program\cpp\synth\synth\oscpack</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;C:\DXSDK\lib;C:\Box2D_v2.1.2\Box2D\Lib;C:\CLAPACK\CLAPACK-3.1.1-VisualStudio\LIB\Win32;C:\OpenCV2.1\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="ApplicationProperty.cpp" />
+    <ClCompile Include="AudioAdapter.cpp" />
+    <ClCompile Include="AudioApi.h" />
+    <ClCompile Include="DllManager.cpp" />
+    <ClCompile Include="KeyboardAdapter.cpp" />
+    <ClCompile Include="MyAudio.cpp" />
+    <ClCompile Include="MyAudioApi.cpp" />
+    <ClCompile Include="OpenCVAdapter.cpp" />
+    <ClCompile Include="DXAPI.cpp" />
+    <ClCompile Include="DXImage.cpp" />
+    <ClCompile Include="GraphicAdapter.cpp" />
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MidiAdapter.cpp" />
+    <ClCompile Include="MouseAdapter.cpp" />
+    <ClCompile Include="MasterPackage.cpp" />
+    <ClCompile Include="MyTuioListener.cpp" />
+    <ClCompile Include="oscpack\ip\IpEndpointName.cpp" />
+    <ClCompile Include="oscpack\ip\win32\NetworkingUtils.cpp" />
+    <ClCompile Include="oscpack\ip\win32\UdpSocket.cpp" />
+    <ClCompile Include="oscpack\osc\OscPrintReceivedElements.cpp" />
+    <ClCompile Include="oscpack\osc\OscReceivedElements.cpp" />
+    <ClCompile Include="oscpack\osc\OscTypes.cpp" />
+    <ClCompile Include="PackageManager.cpp" />
+    <ClCompile Include="SerialAdapter.cpp" />
+    <ClCompile Include="TuioAdapter.cpp" />
+    <ClCompile Include="TUIO\TuioClient.cpp" />
+    <ClCompile Include="TUIO\TuioTime.cpp" />
+    <ClCompile Include="WaveShell.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="ApplicationProperty.h" />
+    <ClInclude Include="AudioAdapter.h" />
+    <ClInclude Include="DllManager.h" />
+    <ClInclude Include="InputApi.h" />
+    <ClInclude Include="KeyboardAdapter.h" />
+    <ClInclude Include="MyAudio.h" />
+    <ClInclude Include="MyAudioApi.h" />
+    <ClInclude Include="MyImage.h" />
+    <ClInclude Include="OpenCVAdapter.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="DXAPI.h" />
+    <ClInclude Include="DXImage.h" />
+    <ClInclude Include="GraphicAdapter.h" />
+    <ClInclude Include="GraphicApi.h" />
+    <ClInclude Include="InputAdapter.h" />
+    <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MidiAdapter.h" />
+    <ClInclude Include="MouseAdapter.h" />
+    <ClInclude Include="MasterPackage.h" />
+    <ClInclude Include="MyTuioListener.h" />
+    <ClInclude Include="Package.h" />
+    <ClInclude Include="PackageManager.h" />
+    <ClInclude Include="portaudio.h" />
+    <ClInclude Include="SerialAdapter.h" />
+    <ClInclude Include="TuioAdapter.h" />
+    <ClInclude Include="WaveShell.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Debug\setup.ini" />
+    <None Include="..\Release\setup.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

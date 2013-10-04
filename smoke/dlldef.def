@@ -1,0 +1,5 @@
+LIBRARY smoke
+EXPORTS
+	CreateInstance @1
+	DestroyInstance @2
+	GetName @3
