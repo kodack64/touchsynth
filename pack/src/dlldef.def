@@ -1,5 +1,0 @@
-LIBRARY sampledll
-EXPORTS
-	CreateInstance @1
-	DestroyInstance @2
-	GetName @3
