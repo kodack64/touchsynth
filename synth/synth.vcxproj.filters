@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{28673f1d-2bde-4279-be8e-8c4b32f28060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{36117a03-ce5d-4d43-a4fc-8eac06ac8625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic">
+      <UniqueIdentifier>{285d0df4-eee7-4520-8caf-ce183a475c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{48b5c9e8-4ff2-4a0c-8ff3-a94c70c0d249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package">
+      <UniqueIdentifier>{8e6b072f-0fc3-4af7-9a48-0ba9d85053d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Property">
+      <UniqueIdentifier>{17bf188e-81f4-4e3c-a3a3-ffec5ef6cab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Logger">
+      <UniqueIdentifier>{3fe09dd8-fb29-4d0d-979a-d4df49a1f4fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Tuio">
+      <UniqueIdentifier>{b63cc7c8-6324-4691-a1a7-2bd2b734cea1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Temp">
+      <UniqueIdentifier>{9645feae-72ec-498a-86b8-70e2e9455b40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Mouse">
+      <UniqueIdentifier>{c964c9a7-2774-4d54-b747-3b0e75037ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Handler">
+      <UniqueIdentifier>{88ba3816-8f0c-4d63-a525-1fec423a4828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Temp">
+      <UniqueIdentifier>{e2cef3c9-ba2e-4ac3-962a-02f9a7abcd94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\PortAudio">
+      <UniqueIdentifier>{55ad74b5-150f-47d3-be7d-8525fd5cc3d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Tuio\TUIO Lib">
+      <UniqueIdentifier>{4c4004f3-cd85-428d-b8f5-c77d9d097e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Tuio\TuioListener">
+      <UniqueIdentifier>{25a527d1-c8af-42d6-b63b-3c6f6a17cffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Midi">
+      <UniqueIdentifier>{1fa12b25-48b7-4b26-98a6-74cc4cd6e903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\OpenCV">
+      <UniqueIdentifier>{4b6d8fd6-d07e-46b0-8474-e3be4e4cceb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Serial">
+      <UniqueIdentifier>{a05c98e5-ac69-40c7-9132-51561f1c1001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Keyboard">
+      <UniqueIdentifier>{891aa8f6-cf56-4b08-8442-abfb7af038cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\DllManage">
+      <UniqueIdentifier>{df945eb0-f05b-45e8-8826-efe89a762be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\API">
+      <UniqueIdentifier>{c08bede0-70f7-4952-a5d1-f3127512595c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\API">
+      <UniqueIdentifier>{bb6e4ccd-7463-410d-a779-143e5045fbc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\API">
+      <UniqueIdentifier>{0f1d2fb3-b589-4151-905c-807200156ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\API\Audio">
+      <UniqueIdentifier>{22870fa7-481f-4ad9-931e-7f42b57d2e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\API\Image">
+      <UniqueIdentifier>{08c1b4a2-8b03-4711-9966-8d1e4737acc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\MasterPackage">
+      <UniqueIdentifier>{49986819-0e86-4c7c-bb87-61e381c11d88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioAdapter.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicAdapter.cpp">
+      <Filter>Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="PackageManager.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationProperty.cpp">
+      <Filter>Application\Property</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Application\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="TuioAdapter.cpp">
+      <Filter>Input\Tuio</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>Input\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseAdapter.cpp">
+      <Filter>Input\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIO\TuioClient.cpp">
+      <Filter>Input\Tuio\TUIO Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIO\TuioTime.cpp">
+      <Filter>Input\Tuio\TUIO Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="oscpack\osc\OscPrintReceivedElements.cpp">
+      <Filter>Input\Tuio\TUIO Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="oscpack\osc\OscReceivedElements.cpp">
+      <Filter>Input\Tuio\TUIO Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="oscpack\osc\OscTypes.cpp">
+      <Filter>Input\Tuio\TUIO Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="oscpack\ip\IpEndpointName.cpp">
+      <Filter>Input\Tuio\TUIO Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="oscpack\ip\win32\NetworkingUtils.cpp">
+      <Filter>Input\Tuio\TUIO Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="oscpack\ip\win32\UdpSocket.cpp">
+      <Filter>Input\Tuio\TUIO Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTuioListener.cpp">
+      <Filter>Input\Tuio\TuioListener</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiAdapter.cpp">
+      <Filter>Input\Midi</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialAdapter.cpp">
+      <Filter>Input\Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenCVAdapter.cpp">
+      <Filter>Input\OpenCV</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardAdapter.cpp">
+      <Filter>Input\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="DllManager.cpp">
+      <Filter>Package\DllManage</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioApi.h">
+      <Filter>Audio\API</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAudioApi.cpp">
+      <Filter>Audio\API</Filter>
+    </ClCompile>
+    <ClCompile Include="DXImage.cpp">
+      <Filter>Graphic\API\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAudio.cpp">
+      <Filter>Audio\API\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveShell.cpp">
+      <Filter>Audio\API\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="DXAPI.cpp">
+      <Filter>Graphic\API</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterPackage.cpp">
+      <Filter>Package\MasterPackage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioAdapter.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicAdapter.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="PackageManager.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationProperty.h">
+      <Filter>Application\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Application\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="TuioAdapter.h">
+      <Filter>Input\Tuio</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.h">
+      <Filter>Input\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Package.h">
+      <Filter>Package\Temp</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseAdapter.h">
+      <Filter>Input\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="portaudio.h">
+      <Filter>Audio\PortAudio</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTuioListener.h">
+      <Filter>Input\Tuio\TuioListener</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiAdapter.h">
+      <Filter>Input\Midi</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialAdapter.h">
+      <Filter>Input\Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenCVAdapter.h">
+      <Filter>Input\OpenCV</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardAdapter.h">
+      <Filter>Input\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="DllManager.h">
+      <Filter>Package\DllManage</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAudioApi.h">
+      <Filter>Audio\API</Filter>
+    </ClInclude>
+    <ClInclude Include="InputAdapter.h">
+      <Filter>Input\Temp</Filter>
+    </ClInclude>
+    <ClInclude Include="InputApi.h">
+      <Filter>Input\API</Filter>
+    </ClInclude>
+    <ClInclude Include="DXImage.h">
+      <Filter>Graphic\API\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAudio.h">
+      <Filter>Audio\API\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveShell.h">
+      <Filter>Audio\API\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicApi.h">
+      <Filter>Graphic\API</Filter>
+    </ClInclude>
+    <ClInclude Include="DXAPI.h">
+      <Filter>Graphic\API</Filter>
+    </ClInclude>
+    <ClInclude Include="MyImage.h">
+      <Filter>Graphic\API\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterPackage.h">
+      <Filter>Package\MasterPackage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Debug\setup.ini">
+      <Filter>Application\Property</Filter>
+    </None>
+    <None Include="..\Release\setup.ini">
+      <Filter>Application\Property</Filter>
+    </None>
+  </ItemGroup>
+</Project>
