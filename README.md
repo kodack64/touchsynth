@@ -1,4 +1,4 @@
-マルチタッチディスプレイ用のアプリケーション
+application for IR multitouch display
 ==========
 
 赤外光を利用したマルチタッチスクリーン上で動作するソフトウェアです。五月祭で展示されました。「infrared multitouch screen」で検索するといろいろな製作記が出てきます。
